@@ -1,0 +1,50 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <ToggleButton
+        android:id="@+id/BoutonRouge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/Rouge"
+        android:textOff="Pas Rouge"
+        android:textOn="Rouge"
+        android:onClick="peindreRegion" />
+
+    <ToggleButton
+        android:id="@+id/BoutonVert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="ToggleButton"
+        android:textOff="Pas Vert"
+        android:textOn="Vert" 
+        android:onClick="peindreRegion"/>
+
+    <ToggleButton
+        android:id="@+id/BoutonBleu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="ToggleButton"
+        android:textOff="Pas Bleu"
+        android:textOn="Bleu"
+        android:onClick="peindreRegion" />
+
+    <TextView
+        android:id="@+id/ZoneCouleur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/BoutonVert"
+        android:text="" />
+
+</RelativeLayout>
